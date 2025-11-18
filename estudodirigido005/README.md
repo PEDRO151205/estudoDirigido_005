@@ -21,14 +21,14 @@ ed005_garantia_nomeAluno/
 │   │   ├── documentos.py
 │   │   ├── usuarios.py
 ├── prints/
-│   ├── modelo_logico.png           # Diagrama lógico do banco
-│   ├── consultas_dbeaver.png       # Resultado da execução no DBeaver
-│   ├── execucao_terminal.png       # Evidência de execução no terminal
+│   ├── modelo_logico.png           
+│   ├── consultas_dbeaver.png       
+│   ├── execucao_terminal.png       
 │
 └── README.md
 
-## 🧠 Modelo de Dados
-# 📌 Entidades Principais
+# 🧠 Modelo de Dados
+## 📌 Entidades Principais
 
 | Entidade        | Descrição                                | Atributos principais                                               |
 | --------------- | ---------------------------------------- | ------------------------------------------------------------------ |

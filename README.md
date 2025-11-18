@@ -27,6 +27,8 @@ ed005_garantia_nomeAluno/
 │
 └── README.md
 
+---
+
 ## 🧠 Modelo de Dados
 # 📌 Entidades Principais
 

@@ -30,6 +30,7 @@ ed005_garantia_nomeAluno/
 ---
 
 ## 🧠 Modelo de Dados
+
 # 📌 Entidades Principais
 
 | Entidade        | Descrição                                | Atributos principais                                               |

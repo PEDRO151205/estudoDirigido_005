@@ -2,9 +2,6 @@
 
 ## 🧩 Estrutura do Projeto
 
---- 
-
-
 ed005_garantia_nomeAluno/
 │
 ├── sql/
@@ -43,68 +40,66 @@ ed005_garantia_nomeAluno/
 
 🔗 Relacionamentos
 
-Loja → Equipamento: 1:N
+**Loja** → Equipamento: 1:N
 Uma loja pode vender vários equipamentos.
 
-Equipamento → Garantia: 1:1
+**Equipamento** → Garantia: 1:1
 Cada equipamento possui exatamente uma garantia.
 
 Documentos e Usuários são independentes por enquanto (isolados para evoluções futuras).
 
 ## 🧮 Modelo Lógico (Resumo)
-Loja (id_loja PK, nome, cnpj, endereco, telefone)
+**Loja** (id_loja PK, nome, cnpj, endereco, telefone)
 
-Equipamento (id_equipamento PK, nome, preco, data_venda,
+**Equipamento** (id_equipamento PK, nome, preco, data_venda,
              id_loja FK REFERENCES Loja(id_loja))
 
-Garantia (id_garantia PK, data_inicio, data_fim, tipo,
+**Garantia** (id_garantia PK, data_inicio, data_fim, tipo,
           id_equipamento FK REFERENCES Equipamento(id_equipamento))
 
-Documentos (id_doc PK, numero_nota)
+**Documentos** (id_doc PK, numero_nota)
 
-Usuários (id_usuario PK, cpf_usuario)
+**Usuários** (id_usuario PK, cpf_usuario)
 
-O diagrama lógico está salvo em:
+## O diagrama lógico está salvo em:
 
 📍 prints/modelo_logico.png
 
 ---
 
-## ⚙️ Execução dos Scripts SQL
+# ⚙️ Execução dos Scripts SQL
 
-1. Criar o banco (se necessário)
+**1. Criar o banco (se necessário)**
 
 CREATE DATABASE app_garantia;
 
-2. Executar o script de criação
+**2. Executar o script de criação**
 
 sql/schema.sql
 
-3. Inserir registros de teste
+**3. Inserir registros de teste**
 
 sql/inserts.sql
 
-4. Consultas sugeridas
+**4. Consultas sugeridas**
 
 SELECT * FROM loja;
 SELECT * FROM equipamento;
 SELECT * FROM garantia;
-SELECT * FROM documentos;
-SELECT * FROM usuarios;
 
-📌 O resultado das consultas deve ser salvo em:
+## 📌 O resultado das consultas deve ser salvo em:
 prints/consultas_dbeaver.png
 
 ---
 
-🐍 Execução do Código Python
+# 🐍 Execução do Código Python
 
-Com o banco configurado corretamente, rode:
+**Com o banco configurado corretamente, rode:**
 
 python src/main.py
 
 
-Capture a tela do terminal e salve como:
+**Capture a tela do terminal e salve como:**
 
 📍 prints/execucao_terminal.png
 

@@ -4,13 +4,13 @@
 
 # 🧩 Estrutura do Projeto
 
-ed005_garantia_nomeAluno/
+
+> ed005_garantia_nomeAluno/
 │
 ├── sql/
 │   ├── schema.sql              # Script de criação das tabelas (Loja, Equipamento, Garantia)
 │   ├── inserts.sql             # Inserção de registros iniciais para testes
 │
-
 ├── src/
 │   ├── main.py                 # Arquivo principal da aplicação
 │   ├── database.py             # Conexão e inicialização do banco de dados
@@ -22,14 +22,13 @@ ed005_garantia_nomeAluno/
 │   │   ├── documentos.py       # Classes/estruturas opcionais para documentos
 │   │   ├── usuarios.py         # Classe Usuários (se aplicável)
 │
-
 ├── prints/
 │   ├── modelo_logico.png       # Diagrama lógico (Draw.io, Miro etc.)
 │   ├── consultas_dbeaver.png   # Prints dos SELECTs no DBeaver
 │   ├── execucao_terminal.png   # Execução da aplicação no terminal
 │
-
 └── README.md                    # Documentação geral do projeto
+
 
 
 
@@ -50,22 +49,20 @@ ed005_garantia_nomeAluno/
 🔗 Relacionamentos
 
 **Loja** → Equipamento: 1:N
-Uma loja pode vender vários equipamentos.
+- Uma loja pode vender vários equipamentos.
 
 **Equipamento** → Garantia: 1:1
-Cada equipamento possui exatamente uma garantia.
+- Cada equipamento possui exatamente uma garantia.
 
 Documentos e Usuários são independentes por enquanto (isolados para evoluções futuras).
 
 ## 🧮 Modelo Lógico (Resumo)
 **Loja** (id_loja PK, nome, cnpj, endereco, telefone)
 
-**Equipamento** (id_equipamento PK, nome, preco, data_venda,
-             id_loja FK REFERENCES Loja(id_loja))
-
-**Garantia** (id_garantia PK, data_inicio, data_fim, tipo,
-          id_equipamento FK REFERENCES Equipamento(id_equipamento))
-
+**Equipamento** (id_equipamento PK, nome, preco, data_venda)
+            
+**Garantia** (id_garantia PK, data_inicio, data_fim, tipo)
+          
 **Documentos** (id_doc PK, numero_nota)
 
 **Usuários** (id_usuario PK, cpf_usuario)
@@ -80,23 +77,24 @@ Documentos e Usuários são independentes por enquanto (isolados para evoluçõe
 
 **1. Criar o banco (se necessário)**
 
-CREATE DATABASE app_garantia;
+- CREATE DATABASE app_garantia;
 
 **2. Executar o script de criação**
 
-sql/schema.sql
+- sql/schema.sql
 
 **3. Inserir registros de teste**
 
-sql/inserts.sql
+- sql/inserts.sql
 
 **4. Consultas sugeridas**
 
-SELECT * FROM loja;
-SELECT * FROM equipamento;
-SELECT * FROM garantia;
+`#RRGGBB`SELECT * FROM ***loja;***
+`#RRGGBB`SELECT * FROM ***equipamento;***
+`#RRGGBB`SELECT * FROM ***garantia;***
 
 ## 📌 O resultado das consultas deve ser salvo em:
+
 prints/consultas_dbeaver.png
 
 ---
@@ -105,7 +103,7 @@ prints/consultas_dbeaver.png
 
 **Com o banco configurado corretamente, rode:**
 
-python src/main.py
+  * python src/main.py
 
 
 **Capture a tela do terminal e salve como:**

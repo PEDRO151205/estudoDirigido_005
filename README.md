@@ -2,6 +2,31 @@
 
 ---
 
+# 🧩 Estrutura do Projeto
+
+ed005_garantia_nomeAluno/
+│
+├── sql/
+│   ├── schema.sql          
+│   ├── inserts.sql         
+│
+├── src/
+│   ├── main.py             
+│   ├── database.py        
+│   ├── models/
+│   │   ├── equipamento.py
+│   │   ├── garantia.py
+│   │   ├── loja.py
+│   │   ├── documentos.py
+│   │   ├── usuarios.py
+├── prints/
+│   ├── modelo_logico.png           # Diagrama lógico do banco
+│   ├── consultas_dbeaver.png       # Resultado da execução no DBeaver
+│   ├── execucao_terminal.png       # Evidência de execução no terminal
+│
+└── README.md
+
+
 ## 🧠 Modelo de Dados
 
 # 📌 Entidades Principais

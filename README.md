@@ -101,9 +101,9 @@ Assim, o sistema implementado representa uma base sólida e escalável para apli
 
 ## 🧾 Créditos
 
-**Autor:** Pedro Henrique Medeiros
-**Disciplina:** Engenharia de Dados / Banco de Dados
-**Instituição:** Curso_BFD_polo_itaipuaçu_maricá
-**Ferramentas:** DBeaver, PostgreSQL/MySQL, Draw.io, Python
+* **Autor:** Pedro Henrique Medeiros
+* **Disciplina:** Engenharia de Dados / Banco de Dados
+* **Instituição:** Curso_BFD_polo_itaipuaçu_maricá
+* **Ferramentas:** DBeaver, PostgreSQL/MySQL, Draw.io, Python
 
 ---

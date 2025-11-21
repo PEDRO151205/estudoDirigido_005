@@ -5,33 +5,34 @@
 # 🧩 Estrutura do Projeto
 
 
-ed005_garantia_nomeAluno/
-│
-|
-├── sql/
-│   ├── schema.sql              
-│   ├── inserts.sql             
-│
-|
-├── src/
-│   ├── main.py                 
-│   ├── database.py             
-│   │
-│   ├── models/
-│   │   ├── equipamento.py      
-│   │   ├── garantia.py        
-│   │   ├── loja.py             
-│   │   ├── documentos.py      
-│   │   ├── usuarios.py         
-│
-|
-├── prints/
-│   ├── modelo_logico.png       
-│   ├── consultas_dbeaver.png   
-│   ├── execucao_terminal.png   
-│
-|
-└── README.md                   
+flowchart TD
+
+A[ed005_garantia_nomeAluno/] --> B[sql/]
+A --> C[src/]
+A --> H[prints/]
+A --> R[README.md]
+
+%% SQL
+B --> B1[schema.sql]
+B --> B2[inserts.sql]
+
+%% SRC
+C --> C1[main.py]
+C --> C2[database.py]
+C --> D[models/]
+
+%% Models
+D --> D1[equipamento.py]
+D --> D2[garantia.py]
+D --> D3[loja.py]
+D --> D4[documentos.py]
+D --> D5[usuarios.py]
+
+%% Prints
+H --> H1[modelo_logico.png]
+H --> H2[consultas_dbeaver.png]
+H --> H3[execucao_terminal.png]
+                 
 
 
 

@@ -4,7 +4,7 @@
 
 # 🧩 Estrutura do Projeto
 
-ed005_garantia_nomeAluno/
+* ed005_garantia_nomeAluno/
 │
 ├── sql/
 │   ├── schema.sql          

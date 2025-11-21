@@ -5,29 +5,29 @@
 # 🧩 Estrutura do Projeto
 
 
-> ed005_garantia_nomeAluno/
+ed005_garantia_nomeAluno/
 │
 ├── sql/
-│   ├── schema.sql              # Script de criação das tabelas (Loja, Equipamento, Garantia)
-│   ├── inserts.sql             # Inserção de registros iniciais para testes
+│   ├── schema.sql              
+│   ├── inserts.sql             
 │
 ├── src/
-│   ├── main.py                 # Arquivo principal da aplicação
-│   ├── database.py             # Conexão e inicialização do banco de dados
+│   ├── main.py                 
+│   ├── database.py             
 │   │
 │   ├── models/
-│   │   ├── equipamento.py      # Classe Equipamento + regras/validações
-│   │   ├── garantia.py         # Classe Garantia
-│   │   ├── loja.py             # Classe Loja
-│   │   ├── documentos.py       # Classes/estruturas opcionais para documentos
-│   │   ├── usuarios.py         # Classe Usuários (se aplicável)
+│   │   ├── equipamento.py      
+│   │   ├── garantia.py        
+│   │   ├── loja.py             
+│   │   ├── documentos.py      
+│   │   ├── usuarios.py         
 │
 ├── prints/
-│   ├── modelo_logico.png       # Diagrama lógico (Draw.io, Miro etc.)
-│   ├── consultas_dbeaver.png   # Prints dos SELECTs no DBeaver
-│   ├── execucao_terminal.png   # Execução da aplicação no terminal
+│   ├── modelo_logico.png       
+│   ├── consultas_dbeaver.png   
+│   ├── execucao_terminal.png   
 │
-└── README.md                    # Documentação geral do projeto
+└── README.md                   
 
 
 
@@ -89,9 +89,9 @@ Documentos e Usuários são independentes por enquanto (isolados para evoluçõe
 
 **4. Consultas sugeridas**
 
-`#RRGGBB`SELECT * FROM ***loja;***
-`#RRGGBB`SELECT * FROM ***equipamento;***
-`#RRGGBB`SELECT * FROM ***garantia;***
+- SELECT * FROM ***loja;***
+- SELECT * FROM ***equipamento;***
+- SELECT * FROM ***garantia;***
 
 ## 📌 O resultado das consultas deve ser salvo em:
 

@@ -4,27 +4,30 @@
 
 # 🧩 Estrutura do Projeto
 
-* ed005_garantia_nomeAluno/
+ed005_garantia_nomeAluno/
 │
 ├── sql/
-│   ├── schema.sql          
-│   ├── inserts.sql         
+│   ├── schema.sql              # Script de criação das tabelas (Loja, Equipamento, Garantia)
+│   ├── inserts.sql             # Inserção de registros iniciais para testes
 │
 ├── src/
-│   ├── main.py             
-│   ├── database.py        
+│   ├── main.py                 # Arquivo principal da aplicação
+│   ├── database.py             # Conexão e inicialização do banco de dados
+│   │
 │   ├── models/
-│   │   ├── equipamento.py
-│   │   ├── garantia.py
-│   │   ├── loja.py
-│   │   ├── documentos.py
-│   │   ├── usuarios.py
-├── prints/
-│   ├── modelo_logico.png           # Diagrama lógico do banco
-│   ├── consultas_dbeaver.png       # Resultado da execução no DBeaver
-│   ├── execucao_terminal.png       # Evidência de execução no terminal
+│   │   ├── equipamento.py      # Classe Equipamento + regras/validações
+│   │   ├── garantia.py         # Classe Garantia
+│   │   ├── loja.py             # Classe Loja
+│   │   ├── documentos.py       # Classes/estruturas opcionais para docs da garantia
+│   │   ├── usuarios.py         # Classe Usuários (se aplicável)
 │
-└── README.md
+├── prints/
+│   ├── modelo_logico.png       # Diagrama lógico do banco (feito no Draw.io, Miro, etc.)
+│   ├── consultas_dbeaver.png   # Prints dos SELECTs no DBeaver após inserts
+│   ├── execucao_terminal.png   # Evidência de execução da aplicação no terminal
+│
+└── README.md                   # Documentação geral do projeto
+
 
 
 ## 🧠 Modelo de Dados

@@ -7,10 +7,12 @@
 
 ed005_garantia_nomeAluno/
 │
+|
 ├── sql/
 │   ├── schema.sql              
 │   ├── inserts.sql             
 │
+|
 ├── src/
 │   ├── main.py                 
 │   ├── database.py             
@@ -22,11 +24,13 @@ ed005_garantia_nomeAluno/
 │   │   ├── documentos.py      
 │   │   ├── usuarios.py         
 │
+|
 ├── prints/
 │   ├── modelo_logico.png       
 │   ├── consultas_dbeaver.png   
 │   ├── execucao_terminal.png   
 │
+|
 └── README.md                   
 
 
